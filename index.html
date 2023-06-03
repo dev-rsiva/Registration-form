@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="app">
+      <h1>Registration Form</h1>
+      <form>
+        <!-- <label for="name">Name:</label> -->
+        <input type="text" id="name" placeholder="Name" /><br /><br />
+        <!-- <label for="email">Email:</label> -->
+        <input type="email" id="email" placeholder="Email" /><br /><br />
+        <!-- <label for="Password">Password:</label> -->
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+        /><br /><br />
+        <!-- <label for="confirm pass">Confirm Password:</label> -->
+        <input
+          type="password"
+          id="confirmpass"
+          placeholder="Confirm password"
+        /><br /><br />
+        <!-- <label for="dob">Date of Birth:</label> -->
+        <input
+          placeholder="Date of birth(mm/dd/yyyy)"
+          type="text"
+          onfocus="(this.type = 'date')"
+          id="date"
+        /><br />
+        <div id="radio">
+          <label id="gender" for="gender">Gender:&nbsp&nbsp</label>
+
+          <input type="radio" name="gender" id="male" />
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="other" />
+          <label for="other">Other</label>
+        </div>
+
+        <div id="checkbox">
+          <label id="interest" for="interest">Interests:&nbsp&nbsp</label>
+
+          <input type="checkbox" name="" id="" />
+          <label for="music">Music</label>
+          <input type="checkbox" name="" id="" />
+          <label for="music">Sports</label>
+          <input type="checkbox" name="" id="" />
+          <label for="music">Reading</label>
+        </div>
+        <br />
+
+        <div id="button">
+          <button type="submit">Submit</button>
+          <button type="reset" id="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
